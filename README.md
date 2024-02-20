@@ -1,4 +1,4 @@
-1- # Windows Audit Log Tampering
+# Windows Audit Log Tampering
 Check for any tampering done to Windows audit logs.
 
 index=__your_sysmon_index__ (sourcetype=wineventlog AND (EventCode=1102 OR EventCode=1100)) OR (sourcetype=wineventlog AND EventCode=104)
